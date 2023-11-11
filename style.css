@@ -1,16 +1,100 @@
-.{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6dddd;
+    color: #fff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-.bg-dark{
-	background-color: #75767B;
-}
+    background-image: url(ok3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: solid #ffeeee;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  
+  .card-header {
+    text-align: center;
+    background-color: #498eac;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #ffffff;
+    padding: 20px 0;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    color: #c5753c;
+    text-align: center;
+    padding: 20px; 
+  }
+  
+  .form-group {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control:hover{
+    border: 2px solid rgb(195, 151, 151);
+    cursor: pointer;
+    transition: border 0.3s;
+    
+  }
+  
+  label{
+    color: #795548;;
+    line-height: 30px;
+    font-style: italic;
+  }
+  
+  select.form-control,
+  input.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #882323;
+  }
+  
+  button.btn {
+    background-color: rgb(22, 134, 225);
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-
-.mt-50{
-	margin-top: 50px;
-}
-#canvas{
-    border: 2px solid black;
-}
+  .btn:hover{
+    background-color: rgb(12, 100, 154);
+    transition: background-color 0.3s;
+  }
+  
+  #prediction {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .kms{
+    margin-right: 23px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    body{
+        background-image: url(/static/images/new_640x1140.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  }
